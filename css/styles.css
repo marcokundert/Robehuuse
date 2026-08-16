@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,6 +34,7 @@ body {
   background: var(--bg);
   line-height: 1.65;
   font-size: 17px;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -280,7 +282,7 @@ body.nav-open .menu-toggle span::after {
   font-size: clamp(40px, 5.6vw, 72px);
   line-height: 1.02;
   letter-spacing: -0.045em;
-  font-weight: 750;
+  font-weight: 800;
   max-width: 11ch;
 }
 
@@ -300,7 +302,7 @@ body.nav-open .menu-toggle span::after {
 .hero-visual {
   position: relative;
   min-height: 520px;
-  margin-right: calc((100vw - var(--max)) / -2);
+  margin-right: calc(50% - 50vw);
 }
 
 .hero-visual img {
@@ -333,7 +335,7 @@ body.nav-open .menu-toggle span::after {
 
 .event {
   display: grid;
-  grid-template-columns: 110px 1fr 220px;
+  grid-template-columns: minmax(7.5rem, 130px) 1fr minmax(160px, 220px);
   gap: 28px;
   align-items: center;
   padding: 28px 0;
@@ -345,10 +347,11 @@ body.nav-open .menu-toggle span::after {
 }
 
 .event-date {
-  font-size: 28px;
+  font-size: clamp(22px, 2.4vw, 28px);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.05;
+  overflow-wrap: anywhere;
 }
 
 .event-date span {
@@ -412,6 +415,7 @@ body.nav-open .menu-toggle span::after {
 /* CTA */
 .cta {
   padding: 96px 0;
+  overflow: hidden;
 }
 
 .cta-grid {
@@ -441,6 +445,7 @@ body.nav-open .menu-toggle span::after {
 
 .newsletter-form input {
   flex: 1;
+  min-width: 0;
   min-height: 50px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -715,6 +720,12 @@ th {
   color: var(--muted);
 }
 
+td:first-child {
+  white-space: nowrap;
+  font-weight: 700;
+  width: 7.5rem;
+}
+
 /* Forms */
 .form {
   display: grid;
@@ -917,6 +928,7 @@ th {
   color: var(--muted);
   font-size: 15px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .toc a:hover {
