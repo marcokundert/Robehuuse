@@ -1,0 +1,13 @@
+{
+  "name": "robehuuse",
+  "private": true,
+  "scripts": {
+    "build:analytics": "esbuild js/analytics-src.js --bundle --format=iife --outfile=js/analytics.js"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12"
+  }
+}
