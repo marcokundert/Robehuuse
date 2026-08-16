@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veranstaltung einreichen | Robehuuse</title>
+  <meta name="description" content="Öffentliche Veranstaltung in Robenhausen publizieren.">
+  <link rel="icon" href="img/logo-wappen.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-wappen.png" alt="Wappen Robenhausen">
+        <span class="logo-text"><small>min Lieblingsort.</small><span class="logo-word">ROBEHUUSE</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="wuchemaert.html">Wuchemärt</a>
+        <a href="anlaesse.html" aria-current="page">Anlässe</a>
+        <a href="mitmachen.html">Mitmachen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+    <section class="page-hero wrap">
+      <span class="kicker">Kalender</span>
+      <h1>Veranstaltung einreichen</h1>
+      <p>Wenn Sie eine künftige öffentliche Veranstaltung in Robenhausen publizieren möchten, füllen Sie bitte alle Felder aus. Im Feld «Details» bitte auch den Namen des Veranstalters angeben – idealerweise mit Telefon und E-Mail.</p>
+    </section>
+    <section class="page-section" style="background: var(--bg-warm);">
+      <div class="wrap">
+        <form class="form" data-enhance action="https://formsubmit.co/events@robenhausen.ch" method="POST">
+          <input type="hidden" name="_subject" value="Veranstaltung einreichen Robehuuse">
+          <label class="field"><span>Titel</span><input name="titel" required></label>
+          <div class="form-row">
+            <label class="field"><span>Datum</span><input type="date" name="datum" required></label>
+            <label class="field"><span>Uhrzeit</span><input name="uhrzeit" placeholder="z. B. 14.00–18.00" required></label>
+          </div>
+          <label class="field"><span>Ort</span><input name="ort" required></label>
+          <label class="field"><span>Veranstalter</span><input name="veranstalter" required></label>
+          <div class="form-row">
+            <label class="field"><span>E-Mail</span><input type="email" name="email" required></label>
+            <label class="field"><span>Telefon</span><input type="tel" name="telefon"></label>
+          </div>
+          <label class="field"><span>Details</span><textarea name="details" required></textarea></label>
+          <label class="choice"><input type="checkbox" name="einverstaendnis" required> Die <a href="impressum.html#datenschutz">Datenschutzerklärung</a> habe ich gelesen.</label>
+          <button class="btn" type="submit">Einreichen</button>
+          <p class="form-success">Danke – wir prüfen Ihre Veranstaltung und melden uns.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-bottom" style="border: 0;">
+      <p>© <span data-year>2026</span> Quartierverein Robenhausen</p>
+      <nav><a href="anlaesse.html">Anlässe</a><a href="impressum.html">Impressum</a></nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
