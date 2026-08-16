@@ -22,7 +22,8 @@
 
   document.querySelectorAll(".acc-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const panel = btn.nextElementSibling;
+      const panel = btn.parentElement?.querySelector(".acc-panel");
+      if (!panel) return;
       const open = panel.classList.toggle("is-open");
       btn.setAttribute("aria-expanded", String(open));
     });
@@ -53,6 +54,7 @@
     { href: "newsletter.html", title: "Newsletter", text: "Anlässe Neuigkeiten E-Mail" },
     { href: "links.html", title: "Links", text: "FAGERO Theater Viva Wetzipedia Wetzikon Restaurants" },
     { href: "kontakt.html", title: "Kontakt", text: "IBAN Adresse Formular" },
+    { href: "impressum.html", title: "Impressum", text: "Datenschutz Adresse Haftung" },
   ];
 
   const searchInput = document.querySelector("[data-search]");
@@ -77,11 +79,12 @@
       const success = form.querySelector(".form-success");
       const payload = new FormData(form);
       try {
-        await fetch(form.action, {
+        const response = await fetch(form.action, {
           method: "POST",
           body: payload,
           headers: { Accept: "application/json" },
         });
+        if (!response.ok) throw new Error("Formularversand fehlgeschlagen");
         form.reset();
         if (pairFields) pairFields.hidden = true;
         if (success) success.classList.add("is-visible");
