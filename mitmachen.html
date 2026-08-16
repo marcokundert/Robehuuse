@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitmachen | Robehuuse</title>
+  <meta name="description" content="Mitglied im Quartierverein Robenhausen werden. Jahresbeitrag CHF 25 für Einzelpersonen und Paare.">
+  <link rel="icon" href="img/logo-wappen.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-wappen.png" alt="Wappen Robenhausen">
+        <span class="logo-text">
+          <small>min Lieblingsort.</small>
+          <span class="logo-word">ROBEHUUSE
+            <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.2C.4 8.8 2.2 5 6 5c2.1 0 3.4 1.2 4 2.2C10.6 6.2 11.9 5 14 5c3.8 0 5.6 3.8 3.5 6.8C19 15.6 12 20 12 20z"/></svg>
+          </span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="wuchemaert.html">Wuchemärt</a>
+        <a href="anlaesse.html">Anlässe</a>
+        <a href="mitmachen.html" aria-current="page">Mitmachen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="page-hero wrap">
+      <span class="kicker">Mitgliedschaft</span>
+      <h1>Du gehörst dazu.</h1>
+      <p>Als Mitglied nehmen Sie intensiver am Leben in unserem Quartier teil, werden zu Anlässen eingeladen und können an der Mitgliederversammlung Ihr Stimm- und Wahlrecht ausüben.</p>
+    </section>
+
+    <section class="page-section wrap split">
+      <img src="img/mitmachen.jpg" alt="Menschen feiern gemeinsam im Freien">
+      <div class="prose">
+        <p>Mit Ihrer Unterstützung helfen Sie mit, dass Aktivitäten wie der traditionelle Robehuuser Wuchemärt weiterbestehen und die Interessen von Robenhausen nach aussen vertreten werden.</p>
+        <div class="facts" style="grid-template-columns: 1fr 1fr;">
+          <div class="fact"><strong>CHF 25</strong><span>Jahresbeitrag für Einzelpersonen und Paare</span></div>
+          <div class="fact"><strong>Statuten</strong><span><a class="text-link" href="https://robenhausen.ch/wp-content/uploads/Statuten_v200.pdf" target="_blank" rel="noreferrer">PDF herunterladen →</a></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" style="background: var(--bg-warm);">
+      <div class="wrap">
+        <span class="kicker">Antrag</span>
+        <h2 class="section-title">Mitglied werden</h2>
+        <form class="form" data-enhance style="margin-top: 32px;" action="https://formsubmit.co/kassier@robenhausen.ch" method="POST">
+          <input type="hidden" name="_subject" value="Mitgliedschaftsantrag Robehuuse">
+          <div class="field">
+            <span>Art</span>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="art" value="Einzelmitglied" checked> Einzelmitglied</label>
+              <label class="choice"><input type="radio" name="art" value="Paarmitglied"> Paarmitglied</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label class="field"><span>Vorname</span><input name="vorname" required></label>
+            <label class="field"><span>Nachname</span><input name="nachname" required></label>
+          </div>
+          <div class="form-row">
+            <label class="field"><span>Strasse + Nr.</span><input name="strasse" required></label>
+            <label class="field"><span>PLZ + Ort</span><input name="ort" required></label>
+          </div>
+          <div class="form-row">
+            <label class="field"><span>E-Mail</span><input type="email" name="email" required></label>
+            <label class="field"><span>Telefon</span><input type="tel" name="telefon"></label>
+          </div>
+          <label class="field"><span>Geburtsdatum</span><input type="date" name="geburtsdatum"></label>
+          <div class="pair-fields" hidden>
+            <p class="lead">Angaben der 2. Person</p>
+            <div class="form-row">
+              <label class="field"><span>Vorname</span><input name="vorname2"></label>
+              <label class="field"><span>Nachname</span><input name="nachname2"></label>
+            </div>
+            <div class="form-row">
+              <label class="field"><span>E-Mail 2. Person</span><input type="email" name="email2"></label>
+              <label class="field"><span>Geburtsdatum 2. Person</span><input type="date" name="geburtsdatum2"></label>
+            </div>
+          </div>
+          <label class="field"><span>Nachricht</span><textarea name="nachricht"></textarea></label>
+          <div class="field">
+            <span>Rechnung für den Mitgliederbeitrag</span>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="rechnung" value="E-Mail" checked> per E-Mail als PDF</label>
+              <label class="choice"><input type="radio" name="rechnung" value="Post"> in Papierform per Briefpost</label>
+            </div>
+          </div>
+          <label class="choice"><input type="checkbox" name="einverstaendnis" required> Die <a href="https://robenhausen.ch/wp-content/uploads/Statuten_v200.pdf" target="_blank" rel="noreferrer">Statuten</a> sowie die <a href="impressum.html#datenschutz">Datenschutzerklärung</a> habe ich gelesen und bin damit einverstanden.</label>
+          <button class="btn" type="submit">Antrag senden</button>
+          <p class="form-success">Danke – wir haben Ihren Antrag erhalten und melden uns.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="page-section wrap">
+      <span class="kicker">Weitere Wege</span>
+      <h2 class="section-title">Mithelfen im Quartier</h2>
+      <div class="card-grid" style="margin-top: 36px;">
+        <article class="card">
+          <h3>Standplatz mieten</h3>
+          <p>Einmalig, sporadisch oder regelmässig am Wuchemärt verkaufen – mit oder ohne Marktstand.</p>
+          <p><a class="text-link" href="mailto:wochenmarkt@robenhausen.ch">Patrick Rüegg, 076 577 14 14 →</a></p>
+        </article>
+        <article class="card">
+          <h3>Märthelfer werden</h3>
+          <p>Wir suchen Märthelfer für häufigere oder weniger häufige Einsätze nach Absprache.</p>
+          <p><a class="text-link" href="mailto:wochenmarkt@robenhausen.ch">Wochenmarkt schreiben →</a></p>
+        </article>
+        <article class="card">
+          <h3>Newsletter</h3>
+          <p>Gelegentlich Anlässe und Neuigkeiten. Mitglieder sind automatisch registriert.</p>
+          <p><a class="text-link" href="index.html#anlaesse">Auf der Startseite anmelden →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section" style="background: var(--bg-warm);">
+      <div class="wrap">
+        <span class="kicker">Dank</span>
+        <h2 class="section-title">Ehrenmitglieder</h2>
+        <div class="honor-list" style="margin-top: 24px;">
+          <p>Gebi Breitenmoser, Wetzikon †</p>
+          <p>Christl Diener, Wetzikon</p>
+          <p>Margrit Meier, Wetzikon †</p>
+          <p>Willi Müller, Wetzikon</p>
+          <p>René Scheidegger, Wetzikon †</p>
+          <p>Peter Siegenthaler, Wetzikon</p>
+          <p>Brigitta Siegrist, Wetzikon</p>
+          <p>Erhard Weber, Wetzikon †</p>
+          <p>Henry Wolfensberger, Wetzikon</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <img src="img/logo-wappen.png" alt="Wappen Robenhausen">
+          <span class="logo-text">
+            <small>min Lieblingsort.</small>
+            <span class="logo-word">ROBEHUUSE
+              <svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-9.5-8.2C.4 8.8 2.2 5 6 5c2.1 0 3.4 1.2 4 2.2C10.6 6.2 11.9 5 14 5c3.8 0 5.6 3.8 3.5 6.8C19 15.6 12 20 12 20z"/></svg>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="footer-col">
+        <button class="acc-btn" type="button" aria-expanded="false">Schnellzugriff <span>+</span></button>
+        <h3 class="footer-title">Schnellzugriff</h3>
+        <ul class="acc-panel">
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="wuchemaert.html">Wuchemärt</a></li>
+          <li><a href="anlaesse.html">Anlässe</a></li>
+          <li><a href="mitmachen.html">Mitgliedschaft</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <button class="acc-btn" type="button" aria-expanded="false">Quartierverein Robenhausen <span>+</span></button>
+        <h3 class="footer-title">Quartierverein Robenhausen</h3>
+        <div class="acc-panel">
+          <p>8620 Wetzikon ZH</p>
+          <p><a href="mailto:kassier@robenhausen.ch">kassier@robenhausen.ch</a></p>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Folge uns</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/Quartierverein-Robenhausen-203955049623907/" aria-label="Facebook-Seite" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/groups/robenhausen/" aria-label="Facebook-Gruppe" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h8.2c-.1-.5-.2-1-.2-1.5 0-1.3.5-2.6 1.4-3.6C9.5 13.3 8.7 13 8 13zm8 0c-.4 0-.9 0-1.4.1 1.5.9 2.4 2.2 2.4 3.9 0 .5-.1 1-.2 1.5H23v-2.5c0-2.3-4.7-3.5-7-3.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>© <span data-year>2026</span> Quartierverein Robenhausen</p>
+      <nav>
+        <a href="impressum.html">Impressum</a>
+        <a href="impressum.html#datenschutz">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
