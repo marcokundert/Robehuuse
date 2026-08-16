@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suche | Robehuuse</title>
+  <meta name="description" content="Inhalte der Robehuuse-Website durchsuchen.">
+  <link rel="icon" href="img/logo-wappen.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-wappen.png" alt="Wappen Robenhausen">
+        <span class="logo-text"><small>min Lieblingsort.</small><span class="logo-word">ROBEHUUSE</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="wuchemaert.html">Wuchemärt</a>
+        <a href="anlaesse.html">Anlässe</a>
+        <a href="mitmachen.html">Mitmachen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+    <section class="page-hero wrap">
+      <span class="kicker">Suche</span>
+      <h1>Wonach suchen Sie?</h1>
+      <div class="search-bar">
+        <input type="search" data-search placeholder="z. B. Wuchemärt, Vorstand, Post…">
+      </div>
+      <div class="search-results" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-bottom" style="border: 0;">
+      <p>© <span data-year>2026</span> Quartierverein Robenhausen</p>
+      <nav><a href="impressum.html">Impressum</a></nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

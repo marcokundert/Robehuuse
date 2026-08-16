@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter | Robehuuse</title>
+  <meta name="description" content="Newsletter des Quartiervereins Robenhausen abonnieren.">
+  <link rel="icon" href="img/logo-wappen.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="img/logo-wappen.png" alt="Wappen Robenhausen">
+        <span class="logo-text"><small>min Lieblingsort.</small><span class="logo-word">ROBEHUUSE</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="wuchemaert.html">Wuchemärt</a>
+        <a href="anlaesse.html">Anlässe</a>
+        <a href="mitmachen.html">Mitmachen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+    <section class="page-hero wrap">
+      <span class="kicker">Immer informiert</span>
+      <h1>Newsletter</h1>
+      <p>Als Robenhauser:in oder Robenhausen-Interessierte:r können Sie sich hier anmelden. Wir informieren Sie gelegentlich über Anlässe und Neuigkeiten. Unsere Mitglieder sind automatisch registriert.</p>
+    </section>
+    <section class="page-section" style="background: var(--bg-warm);">
+      <div class="wrap">
+        <form class="form" data-enhance action="https://formsubmit.co/events@robenhausen.ch" method="POST">
+          <input type="hidden" name="_subject" value="Newsletter-Anmeldung Robehuuse">
+          <div class="form-row">
+            <label class="field"><span>Vorname</span><input name="vorname" required></label>
+            <label class="field"><span>Name</span><input name="name" required></label>
+          </div>
+          <label class="field"><span>E-Mail</span><input type="email" name="email" required></label>
+          <label class="choice"><input type="checkbox" name="datenschutz" required> Ich akzeptiere die aktuelle <a href="impressum.html#datenschutz">Datenschutzerklärung</a>.</label>
+          <button class="btn" type="submit">Anmelden</button>
+          <p class="form-success">Danke – wir haben Ihre Anmeldung entgegengenommen.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-bottom" style="border: 0;">
+      <p>© <span data-year>2026</span> Quartierverein Robenhausen</p>
+      <nav><a href="impressum.html">Impressum</a><a href="impressum.html#datenschutz">Datenschutz</a></nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
